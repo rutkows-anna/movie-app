@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import MovieCard from "./MovieCard";
+import styles from '../styles/styles.module.css'; 
 
 function MovieList() {
   const [movies, setMovies] = useState([]);
@@ -14,7 +15,7 @@ function MovieList() {
   }, []);
 
   return (
-    <div>
+    <div className={styles.container}>
       {movies.map((movie) => (
         <MovieCard key={movie.imdbID} movie={movie} />
       ))}
