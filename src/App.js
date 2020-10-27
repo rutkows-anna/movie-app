@@ -1,14 +1,25 @@
 import React from 'react';
 import MovieList from './components/MovieList';
 import Nav from './components/Nav';
-import styles from './styles/styles.module.css'; 
+import Watchlist from "./components/Watchlist";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className={styles.app}>
+    <Router>
       <Nav />
-    <MovieList />
-    </div>
+      <Switch>
+          <Route path="/movies" component={MovieList} />
+          <Route path="/watchlist" component={Watchlist} />
+          <Route exact path="/">
+            <span>dupa</span>
+          </Route>
+      </Switch>
+    </Router>
   );
 }
 

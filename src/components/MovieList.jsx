@@ -4,6 +4,7 @@ import styles from '../styles/styles.module.css';
 
 function MovieList() {
   const [movies, setMovies] = useState([]);
+  const [moviesToWatch, setMoviesToWatch] = useState([])
 
   useEffect((response) => {
     fetch(`http://www.omdbapi.com/?s=${"star wars"}&apikey=${"839b3f45"}`)
@@ -14,12 +15,25 @@ function MovieList() {
       });
   }, []);
 
+const handleMoviesToWatch = (movie) => {
+  setMoviesToWatch(prevMovie => [...prevMovie, movie])
+    console.log(moviesToWatch)
+}
+
   return (
-    <div className={styles.container}>
-      {movies.map((movie) => (
-        <MovieCard key={movie.imdbID} movie={movie} />
-      ))}
-    </div>
+    <section className={styles.appContent}>
+      <div className={styles.container}>
+        { 
+        movies.map((movie) => (
+          <MovieCard key={movie.imdbID} movie={movie} onMoviesToWatch={handleMoviesToWatch}/>
+        ))}
+       {moviesToWatch.length > 0 ? 
+       moviesToWatch.map((movie) => (
+         <MovieCard key={movie.imdbID} movie={movie} onMoviesToWatch={handleMoviesToWatch}/>
+       )) : <span>No movies in your list! Add some!</span>
+       }
+      </div>
+    </section>
   );
 }
 
