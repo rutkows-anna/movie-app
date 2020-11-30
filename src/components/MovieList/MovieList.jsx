@@ -37,7 +37,7 @@ const MovieList = () => {
         <button className={styles.button}>search</button>
       </form>
       <MovieWrapper>
-        <ClipLoader size={60} color={"#8083FF"} loading={loading} />
+        <ClipLoader size={80} color={"#8083FF"} loading={loading} />
 
         {error !== null ? (
           <p className={styles.error}>{error}</p>

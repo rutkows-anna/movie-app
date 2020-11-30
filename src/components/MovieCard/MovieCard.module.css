@@ -37,6 +37,7 @@
 .buttonRemove {
   width: 100%;
   margin-top: 20%;
+  min-width: 145px;
   padding: 8px;
   border: solid 2px var(--accents-color);
   border-radius: var(--border-radius);
@@ -44,7 +45,7 @@
   background-color: var(--secondary-color);
   font-size: 1.2rem;
   text-transform: uppercase;
-  font-weight: var( --primary-font-weight);
+  font-weight: var(--primary-font-weight);
   cursor: pointer;
 }
 .buttonRemove:hover {
@@ -57,6 +58,7 @@
 .buttonAdd {
   width: 100%;
   margin-top: 20%;
+  min-width: 145px;
   padding: 8px;
   border: solid 2px var(--accents-color);
   border-radius: var(--border-radius);
@@ -94,7 +96,11 @@
   .year {
     display: none;
   }
-  .button {
+  .buttonRemove {
+    margin-top: 0;
+    padding: 7px;
+  }
+  .buttonAdd {
     margin-top: 0;
     padding: 7px;
   }

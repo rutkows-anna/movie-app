@@ -2,7 +2,8 @@
   width: 100%;
   min-height: 100vh;
   max-width: 1600px;
-  padding: 70px 50px 50px;
+  padding: 70px 30px 30px;
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,6 +28,7 @@
 .button {
   margin: 7% 0 1%;
   padding: 8px 40px;
+  min-width: 210px;
   border: solid 2px var(--accents-color);
   border-radius: var(--border-radius);
   color: var(--secondary-color);

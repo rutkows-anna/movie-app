@@ -2,7 +2,7 @@
   position: fixed;
   z-index: 2;
   width: 100%;
-  padding: 23px 4%;
+  padding: 23px 30px;
   background-color: var(--secondary-color);
   box-shadow: var(--primary-shadow);
   color: var(--primary-color);
