@@ -1,0 +1,101 @@
+.card {
+  margin: 1%;
+  width: clamp(38rem, 40vw, 45rem);
+  height: 25rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  border-radius: var(--border-radius);
+  box-shadow: var(--primary-shadow);
+  background-color: var(--secondary-color);
+}
+.card:hover {
+  box-shadow: var(--secondary-shadow);
+  transform: scale(1.01);
+}
+.poster {
+  height: 100%;
+  width: auto;
+  border-radius: var(--border-radius);
+}
+.cardContent {
+  padding: 28px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+.year {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: var(--primary-color);
+}
+.buttonRemove {
+  width: 100%;
+  margin-top: 20%;
+  padding: 8px;
+  border: solid 2px var(--accents-color);
+  border-radius: var(--border-radius);
+  color: var(--accents-color);
+  background-color: var(--secondary-color);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: var( --primary-font-weight);
+  cursor: pointer;
+}
+.buttonRemove:hover {
+  color: var(--secondary-color);
+  background-color: var(--accents-color);
+}
+.buttonRemove:focus {
+  outline: none;
+}
+.buttonAdd {
+  width: 100%;
+  margin-top: 20%;
+  padding: 8px;
+  border: solid 2px var(--accents-color);
+  border-radius: var(--border-radius);
+  color: var(--secondary-color);
+  background-color: var(--accents-color);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: var(--primary-font-weight);
+  cursor: pointer;
+}
+.buttonAdd:hover {
+  color: var(--accents-color);
+  background-color: var(--secondary-color);
+}
+.buttonAdd:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .card {
+    height: min(25vh, 20rem);
+  }
+  .cardContent {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    margin: 3% 1%;
+  }
+  .cardContent {
+    padding: 15px;
+  }
+  .year {
+    display: none;
+  }
+  .button {
+    margin-top: 0;
+    padding: 7px;
+  }
+}
