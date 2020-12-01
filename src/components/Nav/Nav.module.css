@@ -24,20 +24,6 @@
   color: var(--accents-color);
   font-weight: var(--primary-font-weight);
 }
-.nightMode {
-  height: 1.8rem;
-  padding: 0 6px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-.nightMode:focus {
-  outline: none;
-}
-.nightModeIcon {
-  width: 1.8rem;
-  height: 1.8rem;
-}
 
 @media only screen and (max-width: 600px) {
   .mainNav {

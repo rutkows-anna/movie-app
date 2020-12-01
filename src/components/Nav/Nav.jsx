@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { routes } from "../../routes/routes";
 import styles from "./Nav.module.css";
-import night from "../../assets/night.svg";
 
 function Nav() {
   return (
@@ -37,18 +36,6 @@ function Nav() {
           >
             Watchlist
           </NavLink>
-        </li>
-        <li>
-          <button
-            className={styles.nightMode}
-            onClick={() => console.log("night mode")}
-          >
-            <img
-              src={night}
-              alt="night mode"
-              className={styles.nightModeIcon}
-            />
-          </button>
         </li>
       </ul>
     </nav>
