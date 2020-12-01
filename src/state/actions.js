@@ -28,7 +28,7 @@ export const setError = (error) => ({
 
 export const fetchMovies = (searchValue) => (dispatch) => {
   dispatch(setLoading());
-  fetch(`http://www.omdbapi.com/?s=${searchValue}&apikey=${"839b3f45"}`)
+  fetch(`https://www.omdbapi.com/?s=${searchValue}&apikey=${"839b3f45"}`)
     .then((response) => response.json())
     .then((response) => {
       if (response.Response === "False") {
