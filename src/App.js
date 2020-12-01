@@ -4,13 +4,13 @@ import MovieList from "./components/MovieList/MovieList";
 import Nav from "./components/Nav/Nav";
 import Watchlist from "./components/Watchlist/Watchlist";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import { routes } from "./routes/routes";
 import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <HashRouter basename="/">
       <div className="app">
         <Nav />
         <Switch>
@@ -20,7 +20,7 @@ function App() {
           <Route component={ErrorPage} />
         </Switch>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
