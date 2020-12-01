@@ -1,8 +1,6 @@
 # movie-app
 
-**React-Redux** movie-app.
-
-**Live demo**: _https://rutkows-anna.github.io/movie-app/_
+**React-Redux** movie-app. **Live demo**: _https://rutkows-anna.github.io/movie-app/_
 	
 ## Features
 User can:
