@@ -1,4 +1,4 @@
-# to-do-app
+# movie-app
 
 **React-Redux** movie-app.
 
