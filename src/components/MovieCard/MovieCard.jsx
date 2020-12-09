@@ -29,13 +29,13 @@ const MovieCard = ({ movie }) => {
         <p className={styles.year}>{movie.Year}</p>
         {isInWatchlist(movie.imdbID) ? (
           <button
-            className={styles.buttonRemove}
+            className={`${styles.button} ${styles.remove}`}
             onClick={() => onRemove(movie.imdbID)}
           >
             remove from watchlist
           </button>
         ) : (
-          <button className={styles.buttonAdd} onClick={() => onAdd(movie)}>
+          <button className={`${styles.button} ${styles.add}`} onClick={() => onAdd(movie)}>
             add to watchlist +
           </button>
         )}

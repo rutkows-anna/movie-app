@@ -35,49 +35,37 @@
   line-height: 1.2;
   color: var(--primary-color);
 }
-.buttonRemove {
+.button {
   width: 100%;
   margin-top: 20%;
   min-width: 145px;
   padding: 8px;
   border: solid 2px var(--accents-color);
   border-radius: var(--border-radius);
-  color: var(--accents-color);
-  background-color: var(--secondary-color);
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: var(--primary-font-weight);
   cursor: pointer;
 }
-.buttonRemove:hover {
-  color: var(--secondary-color);
-  background-color: var(--accents-color);
-}
-.buttonRemove:focus {
+.button:focus {
   outline: none;
 }
-.buttonAdd {
-  width: 100%;
-  margin-top: 20%;
-  min-width: 145px;
-  padding: 8px;
-  border: solid 2px var(--accents-color);
-  border-radius: var(--border-radius);
-  color: var(--secondary-color);
-  background-color: var(--accents-color);
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  font-weight: var(--primary-font-weight);
-  cursor: pointer;
-}
-.buttonAdd:hover {
+.remove {
   color: var(--accents-color);
   background-color: var(--secondary-color);
 }
-.buttonAdd:focus {
-  outline: none;
+.remove:hover {
+  color: var(--secondary-color);
+  background-color: var(--accents-color);
 }
-
+.add {
+  color: var(--secondary-color);
+  background-color: var(--accents-color);
+}
+.add:hover {
+  color: var(--accents-color);
+  background-color: var(--secondary-color);
+}
 @media only screen and (max-width: 1200px) {
   .card {
     height: min(25vh, 20rem);
@@ -97,12 +85,12 @@
   .year {
     display: none;
   }
-  .buttonRemove {
+ /* .buttonRemove {
     margin-top: 0;
     padding: 7px;
   }
   .buttonAdd {
     margin-top: 0;
     padding: 7px;
-  }
+  } */
 }
