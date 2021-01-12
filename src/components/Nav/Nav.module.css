@@ -18,7 +18,6 @@
 }
 .navLinks:hover {
   color: var(--accents-color);
-  font-weight: var(--primary-font-weight);
 }
 .selected {
   color: var(--accents-color);
